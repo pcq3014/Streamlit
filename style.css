@@ -6,13 +6,11 @@ hide_github_icon = """
 
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 css = """
-<style>
 .css-13bxnaw  .sidebar-content > div:nth-child(1) > div > div:nth-child(2) > div > div > div > div > div > div > div > div > div > div > div > div > div > div > div > div:nth-child(1) > div > div > div > div > div:nth-child(1) > div > div > div > div > div > div > div > div {
     content: "---" !important;
     font-size: 25px;
     margin-left: -10px;
 }
-</style>
 """
 
 st.markdown(css, unsafe_allow_html=True)
