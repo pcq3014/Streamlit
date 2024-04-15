@@ -14,7 +14,7 @@ diem_danh_gia = du_lieu['score'].unique().tolist()
 danh_sach_the_loai = du_lieu['genre'].unique().tolist()
 chon_cot = du_lieu.loc[:, ["name", "genre", "year"]]
 
-st.set_page_config(page_title = "2221050002",layout = 'wide')
+st.set_page_config(page_title = "Streamlit",layout = 'wide')
 st.header("Interactive Dashboard")
 st.subheader("Interact with this dashboard using the widgets on the sidebar")
 
