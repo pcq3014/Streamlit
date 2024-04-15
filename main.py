@@ -59,11 +59,3 @@ plt.xlabel('genre')
 plt.ylabel('budget')
 plt.title('Matplotlib Bar Chart Showing The Average Budget of Movies in Each Genre')
 st.pyplot(fig)
-
-# Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
