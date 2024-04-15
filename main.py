@@ -61,7 +61,7 @@ plt.title('Matplotlib Bar Chart Showing The Average Budget of Movies in Each Gen
 st.pyplot(fig)
 hide_st_style = """
             <style>
-            #github-link {visibility: hidden;}
+            #baseButton-header {visibility: hidden;}
             footer {visibility: hidden;}
             </style>
             """
