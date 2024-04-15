@@ -20,10 +20,7 @@ st.subheader("Interact with this dashboard using the widgets on the sidebar")
 
 with st.sidebar:
     st.write('Select a range on the slider (it represents movie score) to view the total number of movies in a genre that falls within that range')
-    khoang_diem = st.slider(label='Choose a value:',
-                                                min_value=1.00,
-                                                max_value=10.00,
-                                                value= (3.00, 4.00))
+    khoang_diem = st.slider(label='Choose a value:',min_value=1.00,max_value=10.00,value= (3.00, 4.00))
 
     st.write('Select your preferred genre(s) and year to view the movies released that year and on that genre')
     chon_the_loai = st.multiselect('Choose Genre:',danh_sach_the_loai, default = ['Animation', 'Horror', 'Fantasy', 'Romance'])
