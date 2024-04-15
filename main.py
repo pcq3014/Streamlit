@@ -43,10 +43,8 @@ with movies_columns:
 
 with score_columns:
     st.write("#### User score of movies and their genre ")
-    rating_count_year = du_lieu[neu_diem].groupby('genre')['score'].count()
-    rating_count_year = rating_count_year.reset_index()
-    figpx = px.line(rating_count_year, x = 'genre', y = 'score')
-    figpx = px.marker(rating_count_year, x = 'genre', y = 'score')
+    rating_count_genre = du_lieu.groupby('genre')['score'].count().reset_index()
+    figpx = px.line(rating_count_genre, x='genre', y='score', title='User score of movies by genre')
     st.plotly_chart(figpx)
 
 st.write("Average Movie Budget, Grouped by Genre")
