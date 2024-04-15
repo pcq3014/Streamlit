@@ -46,7 +46,7 @@ with score_columns:
     rating_count_year = du_lieu[neu_diem].groupby('genre')['score'].count()
     rating_count_year = rating_count_year.reset_index()
     figpx = px.line(rating_count_year, x = 'genre', y = 'score')
-    figpx.update_traces(mode='lines+markers')
+    figpx = px.marker(rating_count_year, x = 'genre', y = 'score')
     st.plotly_chart(figpx)
 
 st.write("Average Movie Budget, Grouped by Genre")
